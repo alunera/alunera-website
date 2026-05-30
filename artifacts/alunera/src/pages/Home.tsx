@@ -104,7 +104,7 @@ export default function Home() {
         {/* ── PROBLEM ── */}
         <section
           className="py-20 px-4 md:px-6 relative"
-          style={{ background: "linear-gradient(180deg, #fdf8f0 0%, #fef3c7 100%)" }}
+          style={{ background: "linear-gradient(180deg, #ede8f8 0%, #e2d9f5 100%)" }}
         >
           {/* Soft purple glow centre */}
           <div className="pointer-events-none absolute inset-0 flex items-end justify-end overflow-hidden">
@@ -203,7 +203,7 @@ export default function Home() {
         <section
           id="how-it-works"
           className="py-24 px-4 md:px-6 relative"
-          style={{ background: "linear-gradient(180deg, #fef9ee 0%, #fdf8f0 100%)" }}
+          style={{ background: "linear-gradient(180deg, #ede8f8 0%, #e6dff7 100%)" }}
         >
           <div className="pointer-events-none absolute top-0 left-0 w-[300px] h-[300px] opacity-15"
             style={{ background: "radial-gradient(circle, #a855f7 0%, transparent 70%)" }} />
@@ -279,7 +279,7 @@ export default function Home() {
         {/* ── FINAL CTA ── */}
         <section
           className="py-24 px-4 md:px-6 relative overflow-hidden"
-          style={{ background: "linear-gradient(160deg, #fef9ee 0%, #fef3c7 50%, #fdf0f8 100%)" }}
+          style={{ background: "linear-gradient(160deg, #ede8f8 0%, #e2d9f5 50%, #eadcf8 100%)" }}
         >
           {/* Purple glow left */}
           <div className="pointer-events-none absolute -left-20 top-1/2 -translate-y-1/2 w-[400px] h-[400px] opacity-25"
