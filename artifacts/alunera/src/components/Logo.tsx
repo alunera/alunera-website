@@ -26,35 +26,39 @@ export function Logo({ size = "md", variant = "default", className = "" }: LogoP
         {/* Badge with subtle gradient */}
         <defs>
           <linearGradient id="badgeBg" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#0f1f4a" />
-            <stop offset="100%" stopColor="#0a1530" />
+            <stop offset="0%" stopColor="#1e0744" />
+            <stop offset="100%" stopColor="#2d0b5e" />
           </linearGradient>
-          <linearGradient id="dotAccent" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stopColor="#2dd4a8" />
-            <stop offset="100%" stopColor="#0fba8e" />
+          <linearGradient id="aGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#c084fc" />
+            <stop offset="100%" stopColor="#a855f7" />
+          </linearGradient>
+          <linearGradient id="dotGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stopColor="#f472b6" />
+            <stop offset="100%" stopColor="#ec4899" />
           </linearGradient>
         </defs>
 
         <rect width="48" height="48" rx="12" fill="url(#badgeBg)" />
 
-        {/* Subtle teal glow behind text area */}
-        <ellipse cx="24" cy="26" rx="18" ry="12" fill="#0fba8e" fillOpacity="0.07" />
+        {/* Subtle purple glow */}
+        <ellipse cx="24" cy="26" rx="18" ry="12" fill="#a855f7" fillOpacity="0.1" />
 
-        {/* "a" letterform — clean, bold, lowercase */}
+        {/* "a" letterform — purple */}
         <text
           x="11"
           y="34"
           fontFamily="'Plus Jakarta Sans', sans-serif"
           fontWeight="800"
           fontSize={fontSize + 4}
-          fill="url(#dotAccent)"
+          fill="url(#aGrad)"
           letterSpacing="-0.5"
         >
           a
         </text>
 
-        {/* Period — teal dot, offset right */}
-        <circle cx="38" cy="34" r="3.2" fill="url(#dotAccent)" />
+        {/* Period — pink dot */}
+        <circle cx="38" cy="34" r="3.2" fill="url(#dotGrad)" />
       </svg>
     </span>
   );
