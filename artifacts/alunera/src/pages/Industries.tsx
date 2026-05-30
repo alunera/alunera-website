@@ -6,11 +6,8 @@ import {
   Stethoscope, 
   Syringe, 
   Scale, 
-  Calculator, 
-  ShieldCheck, 
   Zap, 
   Wrench, 
-  GraduationCap, 
   Users 
 } from "lucide-react";
 
@@ -55,30 +52,6 @@ export default function Industries() {
       systemsFix: "Instant intake workflows, automated document requests, and centralized client communication."
     },
     {
-      name: "Accounting Firms",
-      icon: Calculator,
-      problems: [
-        "Seasonal bottlenecks during tax time",
-        "Chasing clients for information and signatures",
-        "Inconsistent client onboarding experience"
-      ],
-      leadsLost: "When prospects ask for quotes and follow-ups fall through the cracks.",
-      adminSlows: "Manual data requests, repeated status updates, and disorganized file sharing.",
-      systemsFix: "Client portal automation, scheduled document requests, and structured onboarding workflows."
-    },
-    {
-      name: "Security Companies",
-      icon: ShieldCheck,
-      problems: [
-        "Delayed quotes costing emergency installations",
-        "Messy dispatch and technician scheduling",
-        "Manual contract and SLA management"
-      ],
-      leadsLost: "When security is needed urgently but the quoting process takes too long.",
-      adminSlows: "Creating custom proposals and managing recurring billing manually.",
-      systemsFix: "Rapid quote generation, automated service scheduling, and digital contract signing."
-    },
-    {
       name: "Electricians",
       icon: Zap,
       problems: [
@@ -101,18 +74,6 @@ export default function Industries() {
       leadsLost: "Emergency jobs lost because someone couldn't answer the phone immediately.",
       adminSlows: "Manual dispatching and double-entry of job details into accounting software.",
       systemsFix: "Instant automated responses to web enquiries, smart scheduling, and maintenance reminders."
-    },
-    {
-      name: "Private Schools",
-      icon: GraduationCap,
-      problems: [
-        "Leaky admissions pipelines",
-        "Overwhelming administrative load during enrollment",
-        "Poor communication tracking with prospective parents"
-      ],
-      leadsLost: "When parents request information but don't receive a timely, structured nurture sequence.",
-      adminSlows: "Processing paper applications and manually organizing open day registrations.",
-      systemsFix: "Automated enrollment pipelines, digital form processing, and structured parent nurture campaigns."
     },
     {
       name: "Consultants",
