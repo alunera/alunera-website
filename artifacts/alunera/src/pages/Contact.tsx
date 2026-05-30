@@ -1,144 +1,111 @@
 import { useState } from "react";
 import { Layout } from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import { TallyFormModal } from "@/components/TallyFormModal";
-import { Loader2, CheckCircle2, AlertCircle } from "lucide-react";
+import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
 
 export default function Contact() {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setStatus("submitting");
-
-    const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
-
-    try {
-      // Placeholder HubSpot Webhook URL
-      const webhookUrl = "https://api.hsforms.com/submissions/v3/integration/webhook/PORTAL_ID/FORM_ID";
-      
-      // Simulate API call for the mockup
-      await new Promise(resolve => setTimeout(resolve, 1500));
-      
-      console.log("Submitting to HubSpot:", data);
-      
-      // In a real app with a real webhook:
-      // await fetch(webhookUrl, {
-      //   method: "POST",
-      //   headers: { "Content-Type": "application/json" },
-      //   body: JSON.stringify(data),
-      // });
-
-      setStatus("success");
-      (e.target as HTMLFormElement).reset();
-    } catch (error) {
-      console.error("Form submission error:", error);
-      setStatus("error");
-    }
-  };
 
   return (
     <Layout>
       <div className="w-full bg-background min-h-[calc(100vh-80px)]">
-        <section className="bg-secondary text-secondary-foreground py-16 px-4 md:px-6">
+        <section className="bg-secondary text-secondary-foreground py-20 px-4 md:px-6">
           <div className="container mx-auto max-w-4xl text-center">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">
-              Contact Alunera
+              Get in Touch
             </h1>
-            <p className="text-xl text-secondary-foreground/80">
-              Have a question before booking your audit? Reach out below.
+            <p className="text-xl text-secondary-foreground/80 max-w-2xl mx-auto">
+              Ready to fix the systems that are costing your business revenue? Start with a free Growth Audit.
             </p>
           </div>
         </section>
 
-        <section className="py-16 px-4 md:px-6">
-          <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-2 gap-12 lg:gap-24">
-              
-              {/* Contact Form */}
-              <div className="bg-card border border-border rounded-xl p-8 shadow-sm">
-                <h2 className="text-2xl font-bold mb-6">Send us a message</h2>
-                
-                {status === "success" ? (
-                  <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-900 rounded-lg p-6 text-center">
-                    <CheckCircle2 className="w-12 h-12 text-green-500 mx-auto mb-4" />
-                    <h3 className="text-lg font-semibold text-green-800 dark:text-green-400 mb-2">Message Sent</h3>
-                    <p className="text-green-700 dark:text-green-500/80 mb-6">
-                      Thank you for reaching out. We'll get back to you shortly.
-                    </p>
-                    <Button variant="outline" onClick={() => setStatus("idle")}>
-                      Send another message
-                    </Button>
+        <section className="py-20 px-4 md:px-6">
+          <div className="container mx-auto max-w-4xl">
+            <div className="grid md:grid-cols-2 gap-10">
+              {/* Primary CTA Card */}
+              <div className="bg-secondary text-secondary-foreground rounded-2xl p-10 flex flex-col justify-between">
+                <div>
+                  <div className="inline-flex items-center gap-2 bg-primary/20 text-primary text-sm font-semibold px-4 py-1.5 rounded-full mb-6">
+                    Free — No Obligation
                   </div>
-                ) : (
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    {status === "error" && (
-                      <div className="bg-destructive/10 border border-destructive/20 text-destructive p-4 rounded-md flex items-start gap-3">
-                        <AlertCircle className="w-5 h-5 shrink-0 mt-0.5" />
-                        <p className="text-sm">Something went wrong sending your message. Please try again later.</p>
-                      </div>
-                    )}
-                    
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="name">Full Name</Label>
-                        <Input id="name" name="name" required placeholder="John Doe" />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="businessName">Business Name</Label>
-                        <Input id="businessName" name="businessName" required placeholder="Acme Corp" />
-                      </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-2 gap-4">
-                      <div className="space-y-2">
-                        <Label htmlFor="email">Email</Label>
-                        <Input id="email" name="email" type="email" required placeholder="john@example.com" />
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="phone">Phone Number</Label>
-                        <Input id="phone" name="phone" type="tel" placeholder="+27 00 000 0000" />
-                      </div>
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Message</Label>
-                      <Textarea 
-                        id="message" 
-                        name="message" 
-                        required 
-                        placeholder="How can we help you?"
-                        className="min-h-[120px]"
-                      />
-                    </div>
-                    
-                    <Button type="submit" className="w-full" disabled={status === "submitting"}>
-                      {status === "submitting" ? (
-                        <>
-                          <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                          Sending...
-                        </>
-                      ) : "Send Message"}
-                    </Button>
-                  </form>
-                )}
+                  <h2 className="text-3xl font-bold text-white mb-4">
+                    Book Your Free Growth Audit
+                  </h2>
+                  <p className="text-secondary-foreground/75 text-lg mb-8">
+                    In 45 minutes, we'll identify exactly where your business is losing leads, where admin is slowing you down, and what systems would fix it.
+                  </p>
+                  <ul className="space-y-3 mb-10">
+                    {[
+                      "Identify your biggest revenue leaks",
+                      "Map your current lead & follow-up flow",
+                      "Get a clear systems improvement plan",
+                    ].map((item) => (
+                      <li key={item} className="flex items-start gap-3 text-secondary-foreground/80">
+                        <span className="mt-1 w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center shrink-0">
+                          <ArrowRight className="w-3 h-3 text-primary" />
+                        </span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                <Button
+                  size="lg"
+                  className="w-full h-14 text-lg font-semibold"
+                  onClick={() => setIsModalOpen(true)}
+                  data-testid="button-contact-audit"
+                >
+                  Book Free Growth Audit
+                </Button>
               </div>
 
-              {/* Alternative CTA */}
-              <div className="flex flex-col justify-center">
-                <div className="bg-muted rounded-xl p-8 border border-border">
-                  <h2 className="text-2xl font-bold mb-4">Want to skip the line?</h2>
-                  <p className="text-muted-foreground mb-8 text-lg">
-                    If you already know your business needs better systems, don't wait for an email response. Book a free Growth Audit directly on our calendar.
+              {/* Info Panel */}
+              <div className="flex flex-col gap-6">
+                <div className="bg-card border border-border rounded-2xl p-8">
+                  <h3 className="text-lg font-bold mb-2">Based in South Africa</h3>
+                  <p className="text-muted-foreground mb-6">
+                    We work exclusively with South African service businesses. All audits are conducted online via video call.
                   </p>
-                  <Button size="lg" className="w-full h-14 text-lg" onClick={() => setIsModalOpen(true)}>
-                    Book Free Growth Audit
-                  </Button>
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 text-sm text-foreground">
+                      <div className="w-9 h-9 rounded-lg bg-muted flex items-center justify-center shrink-0">
+                        <MapPin className="w-4 h-4 text-accent" />
+                      </div>
+                      <span>South Africa — serving businesses nationwide</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm text-foreground">
+                      <div className="w-9 h-9 rounded-lg bg-muted flex items-center justify-center shrink-0">
+                        <Mail className="w-4 h-4 text-accent" />
+                      </div>
+                      <span>hello@alunera.co.za</span>
+                    </div>
+                    <div className="flex items-center gap-3 text-sm text-foreground">
+                      <div className="w-9 h-9 rounded-lg bg-muted flex items-center justify-center shrink-0">
+                        <Phone className="w-4 h-4 text-accent" />
+                      </div>
+                      <span>Available via booked consultation only</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-muted border border-border rounded-2xl p-8">
+                  <h3 className="text-lg font-bold mb-2">What happens next?</h3>
+                  <ol className="space-y-4">
+                    {[
+                      { n: "1", text: "Book your free 45-minute audit slot" },
+                      { n: "2", text: "We review your current systems before the call" },
+                      { n: "3", text: "You receive a clear growth systems plan" },
+                    ].map((step) => (
+                      <li key={step.n} className="flex items-start gap-3">
+                        <span className="w-7 h-7 rounded-full bg-secondary text-secondary-foreground text-sm font-bold flex items-center justify-center shrink-0 mt-0.5">
+                          {step.n}
+                        </span>
+                        <span className="text-muted-foreground">{step.text}</span>
+                      </li>
+                    ))}
+                  </ol>
                 </div>
               </div>
             </div>
