@@ -1,0 +1,307 @@
+Build a fully responsive, production-ready website for a South African company called Alunera.
+
+This is NOT a normal website.
+It is a high-conversion growth audit funnel system disguised as a website designed to generate qualified business leads.
+
+⚙️ TECH STACK (MANDATORY)
+
+Build using:
+
+React (or Next.js if supported)
+Tailwind CSS
+Clean component-based structure
+Mobile-first responsive design
+
+Integrations:
+
+Tally Forms (lead capture)
+HubSpot CRM (API-ready webhook structure)
+Cal.com (booking embed)
+Google Analytics (placeholder script)
+Google Search Console (meta-ready setup)
+
+❌ Do NOT use:
+
+WhatsApp integrations
+Chat widgets
+GoHighLevel
+Popup spam tools
+🎯 PRIMARY OBJECTIVE
+
+The entire website must be optimised for ONE action:
+
+👉 Book Free Growth Audit
+
+This is the primary CTA everywhere.
+
+🧠 CORE POSITIONING (IMPORTANT)
+
+Alunera is NOT:
+
+A website agency
+A marketing agency
+
+Alunera IS:
+A Growth & Automation Systems Partner that helps service-based businesses improve operations, reduce admin, and increase conversions.
+
+We install business systems, not websites.
+
+🧲 USER PSYCHOLOGY (CONVERSION RULE)
+
+The site must make visitors believe:
+
+“My business is losing money because my systems are broken, and Alunera fixes that.”
+
+Everything must reinforce:
+
+inefficiency = lost revenue
+delays = lost customers
+automation = recovered revenue
+systems = growth
+📄 SITE STRUCTURE
+1. HOME PAGE (PRIMARY FUNNEL PAGE)
+HERO SECTION
+
+Headline:
+Your Business Is Losing Revenue Through Slow Follow-Up and Broken Systems
+
+Subheadline:
+Alunera builds growth systems that help service businesses capture more leads, reduce admin, and convert faster.
+
+Primary CTA:
+👉 Book Your Free Growth Audit
+
+Secondary CTA:
+Learn How It Works
+
+Visual:
+Use a modern workflow diagram / systems illustration (NOT stock photos)
+
+PROBLEM SECTION
+
+Headline:
+Most Service Businesses Don’t Have a Demand Problem — They Have a Systems Problem
+
+Content bullets:
+
+Missed enquiries
+Slow response times
+Manual admin overload
+No follow-up systems
+Lost opportunities
+Disorganised communication
+
+Closing line:
+Every missed enquiry = lost revenue opportunity.
+
+SOLUTION SECTION
+
+Headline:
+Introducing The Alunera Growth System
+
+Create a visual flow:
+
+ATTRACT → CAPTURE → RESPOND → CONVERT → GROW
+
+Description:
+We design systems that ensure no lead is lost, no enquiry is delayed, and every opportunity is maximised.
+
+Outcome:
+Less admin. More conversions. More growth.
+
+INDUSTRIES MARQUEE
+
+Create a smooth infinite horizontal scrolling marquee:
+
+Include:
+
+Aesthetic Clinics
+Dental Practices
+Law Firms
+Accounting Firms
+Security Companies
+Electricians
+Plumbers
+Private Schools
+Consultants
+Wellness Clinics
+Medical Practices
+Construction Companies
+Professional Services
+
+Must be:
+
+Smooth animation
+Mobile responsive
+HOW IT WORKS
+
+Headline:
+A Simple System That Fixes Revenue Leakage
+
+Steps:
+
+Book Your Free Growth Audit
+Identify Bottlenecks & Lost Opportunities
+Implement Growth System
+Improve Efficiency & Increase Conversions
+
+Use modern connected cards with subtle animations.
+
+WHY ALUNERA
+
+Headline:
+Built for Service Businesses That Want Efficiency & Growth
+
+Grid features:
+
+South African market focus
+Practical implementation
+Automation where it matters
+Operational efficiency focus
+Conversion-driven systems
+Real business problem solving
+FINAL CTA SECTION
+
+Headline:
+Find Out Exactly Where Your Business Is Losing Revenue
+
+Body:
+Discover missed opportunities, inefficiencies, and automation improvements.
+
+CTA Button:
+👉 Book Your Free Growth Audit
+
+2. ABOUT PAGE
+
+Headline:
+Growth Systems Built for Real Business Problems
+
+Content:
+Alunera helps service businesses reduce manual work, improve efficiency, and increase conversions through structured automation systems.
+
+Focus ONLY on:
+
+business outcomes
+operational efficiency
+system improvement
+
+❌ No founder story
+❌ No personal photos
+❌ No agency branding language
+
+3. INDUSTRIES PAGE
+
+Create modern card layout per industry.
+
+Each card must include:
+
+Common business problems
+Where leads are lost
+Where admin slows operations
+How systems improve efficiency
+
+Industries:
+
+Aesthetic Clinics
+Dental Practices
+Law Firms
+Accounting Firms
+Security Companies
+Electricians
+Plumbers
+Private Schools
+Consultants
+
+Each card includes CTA:
+👉 Book Growth Audit
+
+4. CONTACT PAGE
+
+Simple contact form + Growth Audit CTA redirect.
+
+🔁 LEAD FLOW SYSTEM (CRITICAL)
+STEP 1 — TALLY FORM (ON CTA CLICK)
+
+When user clicks:
+👉 Book Your Free Growth Audit
+
+Open embedded Tally form collecting:
+
+Contact Info:
+Full Name
+Business Name
+Email
+Phone
+Business Info:
+Industry
+Number of Employees
+Website? (Yes/No)
+CRM? (Yes/No)
+Growth Issues:
+Not enough enquiries
+Too much admin
+Slow response times
+Poor follow-up
+Missed appointments
+Customer communication issues
+Outdated systems
+Other
+Outcome:
+
+“What would success look like in 6 months?”
+
+STEP 2 — CRM INTEGRATION
+
+After submission:
+
+Send data to HubSpot via webhook-ready structure
+Create new contact
+Tag as: “Growth Audit Lead”
+STEP 3 — THANK YOU PAGE
+
+Headline:
+Your Growth Audit Request Has Been Received
+
+Subtext:
+We’re reviewing your information. Next step: schedule your Growth Audit.
+
+Embed:
+👉 Cal.com booking widget
+
+STEP 4 — BOOKING COMPLETED
+
+User schedules call via Cal.com.
+
+🎨 DESIGN DIRECTION
+
+Style:
+
+Modern SaaS + consulting hybrid
+Clean whitespace
+Soft gradients
+Subtle motion animations
+Minimal but premium UI
+
+Visuals:
+
+Workflow diagrams
+Abstract system graphics
+Icons (not stock photos of people)
+
+Typography:
+
+Modern sans-serif (Inter / SF Pro style)
+⚡ PERFORMANCE REQUIREMENTS
+Fully responsive
+Fast loading
+SEO optimised
+Clean component structure
+Accessible (ARIA-friendly)
+Smooth animations only (no heavy libraries)
+🎯 FINAL OUTPUT GOAL
+
+The website must function as a conversion engine, not a brochure.
+
+Visitors must leave believing:
+
+“Alunera fixes the hidden inefficiencies in my business that are costing me money every day.”
