@@ -75,21 +75,21 @@
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .07);
 
-  /* Warm cream page background */
-  --background: 42 60% 97%;
+  /* Lilac page background */
+  --background: 270 45% 92%;
   /* Deep purple text */
   --foreground: 268 55% 12%;
-  /* Warm-cream border */
-  --border: 42 30% 88%;
+  /* Lilac border */
+  --border: 270 28% 82%;
 
-  /* Pure cream-white cards */
-  --card: 44 80% 99%;
+  /* Light lilac-white cards */
+  --card: 270 55% 98%;
   --card-foreground: 268 55% 12%;
-  --card-border: 42 35% 90%;
+  --card-border: 270 30% 86%;
 
-  --sidebar: 42 60% 97%;
+  --sidebar: 270 45% 92%;
   --sidebar-foreground: 268 55% 12%;
-  --sidebar-border: 42 30% 88%;
+  --sidebar-border: 270 28% 82%;
   --sidebar-primary: 270 72% 52%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 328 78% 58%;
@@ -108,8 +108,8 @@
   --secondary: 265 62% 12%;
   --secondary-foreground: 0 0% 100%;
 
-  /* Warm cream-yellow muted */
-  --muted: 44 50% 93%;
+  /* Lilac muted */
+  --muted: 270 35% 87%;
   --muted-foreground: 268 25% 42%;
 
   /* Hot pink accent */
@@ -119,7 +119,7 @@
   --destructive: 0 80% 58%;
   --destructive-foreground: 0 0% 100%;
 
-  --input: 42 30% 88%;
+  --input: 270 28% 82%;
   --ring: 270 72% 52%;
 
   --chart-1: 270 72% 52%;
@@ -173,9 +173,9 @@
   --card: 44 80% 99%;
   --card-foreground: 268 55% 12%;
   --card-border: 42 35% 90%;
-  --sidebar: 42 60% 97%;
+  --sidebar: 270 45% 92%;
   --sidebar-foreground: 268 55% 12%;
-  --sidebar-border: 42 30% 88%;
+  --sidebar-border: 270 28% 82%;
   --sidebar-primary: 270 72% 52%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 328 78% 58%;
@@ -194,7 +194,7 @@
   --accent-foreground: 0 0% 100%;
   --destructive: 0 80% 58%;
   --destructive-foreground: 0 0% 100%;
-  --input: 42 30% 88%;
+  --input: 270 28% 82%;
   --ring: 270 72% 52%;
   --chart-1: 270 72% 52%;
   --chart-2: 328 78% 58%;
