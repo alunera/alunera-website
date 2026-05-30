@@ -137,12 +137,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 ))}
               </ul>
             </div>
-            <div>
-              <h3 className="font-semibold text-lg mb-4 text-white">Location</h3>
-              <p className="text-secondary-foreground/70 text-sm">
-                South African Business Growth Partner
-              </p>
-            </div>
           </div>
           <div className="border-t border-secondary-foreground/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-secondary-foreground/50">
             <p>&copy; {new Date().getFullYear()} Alunera. All rights reserved.</p>
