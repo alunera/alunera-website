@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { TallyFormModal } from "./TallyFormModal";
+import { Logo } from "./Logo";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,8 +39,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         }`}
       >
         <div className="container mx-auto px-4 md:px-6 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold tracking-tight text-foreground hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm" aria-label="Alunera Home" data-testid="link-logo">
-            Alunera
+          <Link href="/" className="focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-sm" aria-label="Alunera Home" data-testid="link-logo">
+            <Logo size="md" />
           </Link>
 
           {/* Desktop Nav */}
@@ -114,8 +115,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             <div className="lg:col-span-2">
-              <Link href="/" className="text-2xl font-bold tracking-tight inline-block mb-4 hover:text-primary transition-colors">
-                Alunera
+              <Link href="/" className="inline-block mb-4">
+                <Logo size="md" variant="light" />
               </Link>
               <p className="text-secondary-foreground/70 max-w-sm text-balance">
                 Growth Systems for Service Businesses.
