@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "xmoTvnT9MryCxbBZFrLto"
+uri = "file://artifacts/alunera/public/alunera-logo.svg"
+type = "image"
+title = "Alunera Logo (SVG)"
